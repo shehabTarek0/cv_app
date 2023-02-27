@@ -84,6 +84,7 @@ class SecondScreen extends StatelessWidget {
               child: SingleChildScrollView(
             child: ElevatedButton(
               onPressed: () {
+                AppCubit.get(context).getDaata();
                 _navigateToUserScreen(context);
               },
               style: ElevatedButton.styleFrom(
